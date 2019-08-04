@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <title>Employee Management</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body ng-app="myApp">
+     <div class="jumbotron">
+<nav class="navbar navbar-light bg-light center">
+  <a class="navbar-brand" href="#">
+    <i class="fa fa-user"></i>
+    Employee Management
+  </a>
+  
+</nav>
+    </div>
+   <ul class="nav flex-column">
+  <li class="nav-item">
+    <a class="nav-link active" href="#employee">Employee</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#create">Create New Employee</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#update">Update Existing Employee</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#delete">Delete Existing Employee</a>
+  </li>
+</ul>
+    <div ng-view></div>
+    
+    <script src="angular.js"></script>
+    <script src="angular-route.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

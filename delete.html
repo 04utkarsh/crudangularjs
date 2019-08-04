@@ -1,0 +1,16 @@
+<div>
+    <h2>Delete Employees Details</h2>
+    <br>
+    <table class="table table-striped" id="myTable">
+        <thead>
+            <td>Name</td>
+            <td>EmployeeId</td>
+            <td>Designation</td>
+        </thead>
+        <tr ng-repeat="x in empname" ng-click="remove(x)">
+            <td>{{ x.name}}</td>
+            <td>{{x.employeeID}}</td>
+            <td>{{x.designation}}</td>
+        </tr>
+    </table>
+</div>
